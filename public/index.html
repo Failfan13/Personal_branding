@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head lang={lang}>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Welcome to Firebase Hosting</title>
@@ -17,10 +17,49 @@
   <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-remote-config-compat.js"></script>
   <script defer src="../src/init-firebase.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <script src="./scripts/language.js"></script>
 </head>
 
 <body>
-  <a href="./Pages/about.html">button</a>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href=""><img src="https://1000logos.net/wp-content/uploads/2016/11/google-logo.jpg"></a></li>
+        <li>
+          <!-- <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <a href="" class="dropdown-item">Nederlands</a>
+              <a href="" class="dropdown-item">Engels</a>
+            </div>
+          </div> -->
+          <div class="dropdown is-hoverable">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                <span>{General.hoi}</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+              <div class="dropdown-content">
+                <a href="" class="dropdown-item"><img src="./images/nl.png" alt="Dutch flag"
+                    class="flag">{Nederlands}</a>
+                <a href="" class="dropdown-item"><img src="./images/us.png" alt="English flag" class="flag">{Engels}</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>Personal branding</li>
+      </ul>
+      <ul>
+        <li><a href="">{Over mij}</a></li>
+        <li><a href="">{Kennis}</a></li>
+        <li><a href="">{Projecten}</a></li>
+        <li><a href="" class="button is-normal">{Contact}</a></li>
+      </ul>
+    </nav>
+  </header>
 </body>
 
 </html>
