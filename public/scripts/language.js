@@ -8,11 +8,18 @@ LoadJson().then(data => {
   // ------------------------------ set language ------------------------------
   // set document language
   SetNewLang = (CurrLang) => {
-    if (! document.documentElement.lang) {
+    if (! document.documentElement.lang && ! localStorage.getItem('personalisedLanguage')) {
       document.documentElement.lang = `${CurrLang}`;
       return CurrLang.toUpperCase().slice(0 , 2);
     }
-    return document.documentElement.lang.toUpperCase().slice(0 , 2);
+    else if (! localStorage.getItem('personalisedLanguage')) {
+    
+      return document.documentElement.lang.toLowerCase().slice(0 , 2);
+    }
+    else {
+      document.documentElement.lang = localStorage.getItem('personalisedLanguage').toLowerCase();
+      return localStorage.getItem('personalisedLanguage').toUpperCase().slice(0 , 2);
+    }
   }
   // strip language for json
   var CurrLang = SetNewLang(navigator.language);
