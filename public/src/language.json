@@ -5,6 +5,12 @@
         "Language": {
             "english": "English",
             "dutch": "Dutch"
+        },
+        "Menu": {
+            "aboutMe": "About me",
+            "projects": "Projects",
+            "contact": "Contact",
+            "knowledge": "Knowledge"
         }
     },
     "NL": {
@@ -13,6 +19,12 @@
         "Language": {
             "english": "Engels",
             "dutch": "Nederlands"
+        },
+        "Menu": {
+            "aboutMe": "Over mij",
+            "projects": "Projecten",
+            "contact": "Contact",
+            "knowledge": "Kennis"
         }
     }
 }
