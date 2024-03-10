@@ -1,6 +1,18 @@
 {
-    "Sentences": {},
-    "General": {
-        "hoi": "Hallo!"
+    "EN": {
+        "Sentences": {},
+        "General": {},
+        "Language": {
+            "English": "English",
+            "Dutch": "Dutch"
+        }
+    },
+    "NL": {
+        "Sentences": {},
+        "General": {},
+        "Language": {
+            "english": "Engels",
+            "dutch": "Nederlands"
+        }
     }
 }
