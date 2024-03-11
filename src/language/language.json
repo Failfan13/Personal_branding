@@ -5,9 +5,12 @@
             "ohHey": "Oh hey,",
             "helloThere": "Hello there!",
             "profession": "Full-stack developer / student",
-            "viewProjects": "View my projects"
+            "viewProjects": "View my projects",
+            "ami": "Who am"
         },
-        "General": {},
+        "General": {
+            "i": "I"
+        },
         "Language": {
             "english": "English",
             "dutch": "Dutch"
@@ -25,9 +28,12 @@
             "ohHey": "Oh hey,",
             "helloThere": "Hallo daar!",
             "profession": "Full-stack ontwikkelaar / student",
-            "viewProjects": "Bekijk mijn projecten"
+            "viewProjects": "Bekijk mijn projecten",
+            "ami": "Wie ben"
         },
-        "General": {},
+        "General": {
+            "i": "ik"
+        },
         "Language": {
             "english": "Engels",
             "dutch": "Nederlands"

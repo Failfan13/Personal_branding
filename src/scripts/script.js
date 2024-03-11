@@ -47,5 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
   
       });
     });
-  
-  });
+});
+
+document.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        document.getElementById('navbar').classList.add('is-solid');
+    }
+    else {
+        document.getElementById('navbar').classList.remove('is-solid');
+    }
+})

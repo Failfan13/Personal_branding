@@ -23,7 +23,7 @@
 <body class="has-navbar-fixed-top">
   <header>
     <section class="header-inner">
-      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <nav id="navbar" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <!-- <div class="navbar-blur is-fixed-top"></div> -->
         <div class="navbar-brand">
           <a class="navbar-item" href="">
@@ -85,12 +85,61 @@
           <div class="container">
             <ic>&#x1F9A7;</ic>
           </div>
-
         </article>
-
       </section>
     </section>
   </header>
+  <section class="section aboutme">
+    <span data-txt="Sentence.ami" class="is-size-3"></span>
+    <span data-txt="General.i" class="is-size-3 name"></span>
+    <div class="columns">
+      <div class="column form">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Age</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Skills</label>
+          <div class="control">
+            <div class="select">
+              <select>
+                <option selected>Full-stack developer</option>
+                <option>Front-end developer</option>
+                <option>Back-end developer</option>
+                <option disabled>Graphic designer</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field">
+            <label class="label"></label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Text input">
+            </div>
+          </div>
+        </div>
+
+        <div class="column extra">
+
+        </div>
+      </div>
+
+  </section>
 </body>
 
 <script src="./scripts/language.js"></script>

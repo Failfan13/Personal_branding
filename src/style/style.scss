@@ -19,6 +19,7 @@ ic {
 
 body {
     font-family: Arial, Helvetica, sans-serif !important;
+    background-color: $secondary-color;
 }
 
 span[data-txt] {
@@ -52,6 +53,7 @@ span[data-txt] {
     backdrop-filter: blur(1px);
     border-radius: $big-radius;
     height: 82px;
+    transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
 
     .navbar-item {
         color: $font-col;
@@ -84,10 +86,6 @@ span[data-txt] {
         font-size: large;
         padding: 15px;
         color: $whites;
-
-        &:hover {
-            background-color: green;
-        }
     }
 
     .navbar-divider {
@@ -96,6 +94,13 @@ span[data-txt] {
         margin: auto 0.2em;
         border-left: 1px solid $blacks;
     }
+}
+
+.is-solid {
+    background-color: $secondary-color-dark !important;
+    height: 84px;
+    margin: 19px 23px;
+    border: 2px solid $primary-color;
 }
 
 .header {
@@ -167,4 +172,14 @@ span[data-txt] {
 
         }
     }
+}
+
+.aboutme {
+    height: 1200px;
+
+    .name {
+        color: $primary-color;
+    }
+
+
 }
