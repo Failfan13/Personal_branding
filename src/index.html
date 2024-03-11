@@ -17,13 +17,14 @@
   <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-remote-config-compat.js"></script>
   <!-- <script defer src="../src/init-firebase.js"></script> console error-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="has-navbar-fixed-top">
   <header>
     <section class="header-inner">
-
       <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <!-- <div class="navbar-blur is-fixed-top"></div> -->
         <div class="navbar-brand">
           <a class="navbar-item" href="">
             <img src="https://1000logos.net/wp-content/uploads/2016/11/google-logo.jpg"></a>
@@ -35,9 +36,8 @@
             <span aria-hidden="true"></span>
           </a>
         </div>
-
         <div id="navbar-elems" class="navbar-menu">
-
+          <hr class="navbar-divider">
           <div class="navbar-start">
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
@@ -45,13 +45,13 @@
               </a>
 
               <div class="navbar-dropdown">
-                <a href="" class="dropdown-item language-item NL"><img src="./images/nl.png" alt="Dutch flag"
+                <a href="" class="dropdown-item language-item NL"><img src="./assets/images/nl.png" alt="Dutch flag"
                     class="flag"><span data-txt="Language.dutch"></span:data-txt></a>
-                <a href="" class="dropdown-item language-item EN"><img src="./images/en.png" alt="English flag"
+                <a href="" class="dropdown-item language-item EN"><img src="./assets/images/en.png" alt="English flag"
                     class="flag"><span data-txt="Language.english"></span></a>
               </div>
             </div>
-
+            <hr class="navbar-divider">
             <div class="navbar-item">Personal branding</div>
           </div>
 
@@ -61,11 +61,31 @@
             <a href="" class="navbar-item"><span data-txt="Menu.knowledge"></span></a>
             <hr class="navbar-divider">
             <a href="" class="navbar-item"><span data-txt="Menu.projects"></span></a>
-            <a href="" class="button is-primary navbar-item"><span data-txt="Menu.contact"></span></a>
+            <a href="" class="button is-primary navbar-item">
+              <ic>&#x1F919;&#x1F3FB;</ic><span data-txt="Menu.contact"></span>
+            </a>
           </div>
         </div>
       </nav>
 
+      <section class="header">
+        <div class="header-intro">
+          <heading class="header-head">
+            <span data-txt="Sentence.ohHey"></span><br>
+            <span data-txt="Sentence.helloThere"></span>
+          </heading>
+          <article class="header-txt">
+            <span data-txt="Sentence.profession" class="profession is-size-3"></span>
+            <ic>&#x1F393;</ic>
+            <hr class="divider-hor">
+            <a class="button is-primary"><span data-txt="Sentence.viewProjects" class="is-size-4"></span></a>
+          </article>
+        </div>
+        <article class="header-image">
+
+        </article>
+
+      </section>
     </section>
   </header>
 </body>

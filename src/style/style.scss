@@ -1,0 +1,142 @@
+@import "./imports.scss";
+@import "./variables.scss";
+
+// ------------ General
+ic {
+    font-family: appleEmojis;
+}
+
+.is-primary {
+    background-color: $primary-color !important;
+    color: $whites;
+    border-radius: $small-radius;
+    height: 50px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+span[data-txt] {
+    font-size: medium;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+// ------------ Specific
+
+.header-inner {
+    margin-top: -52px;
+    padding: 10px;
+
+    section {
+        height: calc(100vh - 20px);
+        width: calc(100vw - 20px);
+        background-image: url(../assets/images/binary.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+}
+
+.navbar {
+    background-color: $trans-bg;
+    padding: 0px 5em;
+    margin: 20px 25px;
+    backdrop-filter: blur(1px);
+    border-radius: $big-radius;
+    height: 82px;
+
+    .navbar-item {
+        color: $font-col;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        a:hover {
+            color: $primary-color;
+        }
+    }
+
+    .navbar-dropdown {
+        .dropdown-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .button {
+        align-self: center;
+        gap: 5px;
+        margin-left: 15px;
+        font-size: large;
+        padding: 15px;
+        color: $whites;
+    }
+
+    .navbar-divider {
+        width: 0px;
+        height: 45%;
+        margin: auto 0.2em;
+        border-left: 1px solid $blacks;
+    }
+}
+
+header {
+
+    .header-intro {
+        padding-left: 105px;
+        width: fit-content;
+    }
+
+    .header-head {
+        box-sizing: border-box;
+        display: inline-block;
+        margin-top: 30vh;
+
+        span {
+            font-size: 5rem;
+            font-weight: bold;
+            color: $blacks;
+            line-height: 1.2;
+        }
+    }
+
+    .header-txt {
+        .profession {
+            font-weight: normal;
+            color: $blacks;
+            line-height: 5;
+        }
+
+        ic {
+            font-size: 2rem;
+        }
+
+        .divider-hor {
+            width: 100%;
+            height: 4px;
+            margin: 0;
+            background-color: $blacks;
+        }
+
+        .button {
+            height: 82px;
+            width: 100%;
+            margin-top: 65px;
+            border-radius: $big-radius;
+        }
+    }
+
+    .header-image {
+        // hehe monke
+    }
+}
