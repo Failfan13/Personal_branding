@@ -1,5 +1,5 @@
 const LoadJson = async () => {
-  const response = await fetch('./src/language.json');
+  const response = await fetch('../language/language.json');
   const data = await JSON.parse(await response.text());
   return data;
 } 

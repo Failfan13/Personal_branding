@@ -1,8 +1,9 @@
 // -------- Set language dropdown flag
 setTimeout(() => {
     const lang = document.documentElement.lang.toLowerCase().slice(0 , 2);
-    document.getElementById('dropdown-img').attributes[1].value = `images/${lang}.png`;
-}, 50);
+    console.log(lang);
+    document.getElementById('dropdown-img').attributes[1].value = `../assets/images/${lang}.png`;
+}, 100);
 
 // -------- Clickable dropdown items
 var langBtns = document.getElementsByClassName('language-item');

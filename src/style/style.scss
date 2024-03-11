@@ -11,6 +11,10 @@ ic {
     color: $whites;
     border-radius: $small-radius;
     height: 50px;
+
+    &:hover {
+        background-color: $primary-color-dark !important;
+    }
 }
 
 body {
@@ -80,6 +84,10 @@ span[data-txt] {
         font-size: large;
         padding: 15px;
         color: $whites;
+
+        &:hover {
+            background-color: green;
+        }
     }
 
     .navbar-divider {
@@ -90,17 +98,19 @@ span[data-txt] {
     }
 }
 
-header {
+.header {
+    margin: 0px;
+    // overflow: hidden;
 
     .header-intro {
         padding-left: 105px;
-        width: fit-content;
+        max-width: fit-content;
     }
 
     .header-head {
         box-sizing: border-box;
         display: inline-block;
-        margin-top: 30vh;
+        margin-top: 28vh;
 
         span {
             font-size: 5rem;
@@ -137,6 +147,24 @@ header {
     }
 
     .header-image {
-        // hehe monke
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        .container {
+            box-sizing: border-box;
+            position: inherit;
+            width: 100%;
+            height: 100%;
+        }
+
+        ic {
+            position: absolute;
+            right: 8vw;
+            bottom: -200px;
+            font-size: 30em;
+            visibility: inherit;
+
+        }
     }
 }
