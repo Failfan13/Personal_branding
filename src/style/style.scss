@@ -20,6 +20,7 @@ ic {
 body {
     font-family: Arial, Helvetica, sans-serif !important;
     background-color: $secondary-color;
+    color: $font-col;
 }
 
 span[data-txt] {
@@ -181,5 +182,8 @@ span[data-txt] {
         color: $primary-color;
     }
 
-
+    .field-label {
+        text-align: left;
+        max-width: 70px;
+    }
 }
