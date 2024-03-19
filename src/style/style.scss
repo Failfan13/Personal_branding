@@ -6,6 +6,10 @@ ic {
     font-family: appleEmojis;
 }
 
+.name {
+    color: $primary-color;
+}
+
 .is-primary {
     background-color: $primary-color !important;
     color: $whites;
@@ -176,14 +180,62 @@ span[data-txt] {
 }
 
 .aboutme {
-    height: 1200px;
-
-    .name {
-        color: $primary-color;
-    }
+    // height: 1200px;
 
     .field-label {
-        text-align: left;
-        max-width: 70px;
+        max-width: 110px;
+
+        span::after {
+            content: ":";
+        }
+    }
+
+    .radio-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+
+        .radio {
+            margin-left: 0;
+        }
+    }
+
+    .textarea {
+        min-height: 75px;
+        max-height: max-content;
+        min-width: 300px;
+    }
+
+    .extra {
+        ic {
+            float: right;
+            font-size: 4rem;
+            margin-right: 3em;
+            border: 5px solid transparent;
+        }
+
+        span {
+            text-align: justify;
+        }
+
+    }
+}
+
+.section {
+    .columns {
+        margin-top: 2em;
+    }
+
+    .button {
+        margin-top: 1em;
+        gap: 5px;
+    }
+}
+
+.knowledge {
+    .title-icon {
+        font-size: 2rem;
+        margin-left: 5px;
     }
 }

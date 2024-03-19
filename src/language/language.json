@@ -6,10 +6,21 @@
             "helloThere": "Hello there!",
             "profession": "Full-stack developer / student",
             "viewProjects": "View my projects",
-            "ami": "Who am"
+            "ami": "Who am",
+            "agree": "I agree to the ",
+            "terms": "terms and conditions",
+            "me": "My name is Erik Maan, I am 21 years old and live in the Goere-overflakke area.<br> I am a student at Rotterdam University of Applied Sciences and follow a 4-year Software Development course.<br> In the future I would like to see myself in a full-stack developer position, during a previous training I already gained experience with the font end of website building."
         },
         "General": {
-            "i": "I"
+            "i": "I",
+            "name": "Name",
+            "age": "Age",
+            "email": "Email",
+            "skills": "Skills",
+            "education": "Educations",
+            "experiences": "Experiences",
+            "submit": "Submit",
+            "my": "My"
         },
         "Language": {
             "english": "English",
@@ -20,6 +31,11 @@
             "projects": "Projects",
             "contact": "Contact",
             "knowledge": "Knowledge"
+        },
+        "Job": {
+            "mechanic": "2016 - 2018 Car mechanic",
+            "graphic": "2018 - 2022 Graphic designer",
+            "software": "2022 ~ Software developer"
         }
     },
     "NL": {
@@ -29,10 +45,21 @@
             "helloThere": "Hallo daar!",
             "profession": "Full-stack ontwikkelaar / student",
             "viewProjects": "Bekijk mijn projecten",
-            "ami": "Wie ben"
+            "ami": "Wie ben",
+            "agree": "Ik ga akkoord met de ",
+            "terms": "algemene voorwaarden",
+            "me": "Mijn naam is Erik Maan, ik ben 21 jaar oud en woon in de omgeving Goere-overflakke.<br> Ik ben een student te Hoge school Rotterdam en volg een 4 jarige opleiding Software Development.<br> In de toekomst zie ik mezelf graag in een full-stack ontwikkelaar positie, op een vorige opleiding heb ik al ervaring opgedaan met de font-end van websites bouwen."
         },
         "General": {
-            "i": "ik"
+            "i": "ik",
+            "name": "Naam",
+            "age": "Leeftijd",
+            "email": "Email",
+            "skills": "Vaardigheden",
+            "education": "Opleidingen",
+            "experiences": "Ervaringen",
+            "submit": "Verzenden",
+            "my": "Mijn"
         },
         "Language": {
             "english": "Engels",
@@ -43,6 +70,11 @@
             "projects": "Projecten",
             "contact": "Contact",
             "knowledge": "Kennis"
+        },
+        "Job": {
+            "mechanic": "2016 - 2018 Auto monteur",
+            "graphic": "2018 - 2022 Grafisch ontwerper",
+            "software": "2022 ~ Software ontwikkelaar"
         }
     }
 }
