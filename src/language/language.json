@@ -9,7 +9,8 @@
             "ami": "Who am",
             "agree": "I agree to the ",
             "terms": "terms and conditions",
-            "me": "My name is Erik Maan, I am 21 years old and live in the Goere-overflakke area.<br> I am a student at Rotterdam University of Applied Sciences and follow a 4-year Software Development course.<br> In the future I would like to see myself in a full-stack developer position, during a previous training I already gained experience with the font end of website building."
+            "me": "My name is Erik Maan, I am 21 years old and live in the Goere-overflakke area.<br> I am a student at Rotterdam University of Applied Sciences and follow a 4-year Software Development course.<br> In the future I would like to see myself in a full-stack developer position, during a previous training I already gained experience with the font end of website building.",
+            "knowledge": "How did I gain my knowledge?"
         },
         "General": {
             "i": "I",
@@ -20,7 +21,9 @@
             "education": "Educations",
             "experiences": "Experiences",
             "submit": "Submit",
-            "my": "My"
+            "my": "My",
+            "frameworks": "Tools & frameworks",
+            "professionalism": "Professionalism"
         },
         "Language": {
             "english": "English",
@@ -48,7 +51,8 @@
             "ami": "Wie ben",
             "agree": "Ik ga akkoord met de ",
             "terms": "algemene voorwaarden",
-            "me": "Mijn naam is Erik Maan, ik ben 21 jaar oud en woon in de omgeving Goere-overflakke.<br> Ik ben een student te Hoge school Rotterdam en volg een 4 jarige opleiding Software Development.<br> In de toekomst zie ik mezelf graag in een full-stack ontwikkelaar positie, op een vorige opleiding heb ik al ervaring opgedaan met de font-end van websites bouwen."
+            "me": "Mijn naam is Erik Maan, ik ben 21 jaar oud en woon in de omgeving Goere-overflakke.<br> Ik ben een student te Hoge school Rotterdam en volg een 4 jarige opleiding Software Development.<br> In de toekomst zie ik mezelf graag in een full-stack ontwikkelaar positie, op een vorige opleiding heb ik al ervaring opgedaan met de font-end van websites bouwen.",
+            "knowledge": "Hoe heb ik mijn kennis opgedaan?"
         },
         "General": {
             "i": "ik",
@@ -59,7 +63,9 @@
             "education": "Opleidingen",
             "experiences": "Ervaringen",
             "submit": "Verzenden",
-            "my": "Mijn"
+            "my": "Mijn",
+            "frameworks": "Hulpmiddelen & raamwerken",
+            "professionalism": "Professionaliteit"
         },
         "Language": {
             "english": "Engels",

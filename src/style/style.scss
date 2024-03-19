@@ -21,6 +21,12 @@ ic {
     }
 }
 
+.txtarea {
+    padding: 20px;
+    background-color: white;
+    border-radius: $small-radius 0;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif !important;
     background-color: $secondary-color;
@@ -33,6 +39,10 @@ span[data-txt] {
 
 ::-webkit-scrollbar {
     width: 0;
+}
+
+.is-static {
+    margin: 0 !important;
 }
 
 // ------------ Specific
@@ -237,5 +247,58 @@ span[data-txt] {
     .title-icon {
         font-size: 2rem;
         margin-left: 5px;
+    }
+
+    .tile.box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        min-height: 180px;
+        max-height: 180px;
+        overflow: hidden;
+
+        &:hover {
+            background-color: $secondary-color-dark;
+
+        }
+
+        img {
+            justify-self: end;
+        }
+    }
+
+    .extra {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .column.extra {
+        margin-top: calc(20px + 0.75em)
+    }
+
+    .windows {
+        .tile.box {
+            max-height: 600px;
+            align-items: flex-start;
+            padding: 10px;
+
+            .window {
+                display: relative;
+                max-height: 1.5em;
+                min-height: 1.5em;
+                float: left;
+                font-size: 3em;
+            }
+
+            p {
+                margin-top: 15px;
+                align-self: center;
+            }
+
+            span {
+                align-self: center;
+            }
+        }
     }
 }
