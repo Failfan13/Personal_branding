@@ -1,6 +1,9 @@
 // -------- Set language dropdown flag
 setTimeout(() => {
-    const lang = document.documentElement.lang.toLowerCase().slice(0, 2);
+    let lang = document.documentElement.lang.toLowerCase().slice(0, 2);
+    // if (lang != "en") {
+    //     lang = "nl";
+    // }
     document.getElementById('dropdown-img').attributes[1].value = `../assets/images/${lang}.png`;
 }, 1000);
 

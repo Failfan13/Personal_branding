@@ -10,7 +10,10 @@
             "agree": "I agree to the ",
             "terms": "terms and conditions",
             "me": "My name is Erik Maan, I am 21 years old and live in the Goere-overflakke area.<br> I am a student at Rotterdam University of Applied Sciences and follow a 4-year Software Development course.<br> In the future I would like to see myself in a full-stack developer position, during a previous training I already gained experience with the font end of website building.",
-            "knowledge": "How did I gain my knowledge?"
+            "knowledge": "How did I gain my knowledge?",
+            "viewScrum": "View scrum",
+            "scrum": "In the projects shown below I have used the scrum method several times. For most projects I have been the scrum master and I have put my project team to work and kept all documentation files in order to create an managable overview.",
+            "gainKnowledge": "Uhhhh just learning i guess"
         },
         "General": {
             "i": "I",
@@ -23,7 +26,9 @@
             "submit": "Submit",
             "my": "My",
             "frameworks": "Tools & frameworks",
-            "professionalism": "Professionalism"
+            "professionalism": "Professionalism",
+            "application": "Application management",
+            "projects": "Projects"
         },
         "Language": {
             "english": "English",
@@ -52,7 +57,10 @@
             "agree": "Ik ga akkoord met de ",
             "terms": "algemene voorwaarden",
             "me": "Mijn naam is Erik Maan, ik ben 21 jaar oud en woon in de omgeving Goere-overflakke.<br> Ik ben een student te Hoge school Rotterdam en volg een 4 jarige opleiding Software Development.<br> In de toekomst zie ik mezelf graag in een full-stack ontwikkelaar positie, op een vorige opleiding heb ik al ervaring opgedaan met de font-end van websites bouwen.",
-            "knowledge": "Hoe heb ik mijn kennis opgedaan?"
+            "knowledge": "Hoe heb ik mijn kennis opgedaan?",
+            "viewScrum": "Bekijk scrum",
+            "scrum": "In de projecten die hieronder worden weergeven heb ik meerdere keren gebruik gemaakt van de scrum methode. Bij de meeste projecten ben ik de scrum master geweest en heb ik mijn project team tot werken gezet en heb alle documentatie bestanden in orde gehouden om een duideijk overzicht te maken.",
+            "gainKnowledge": "Uhhhh gwn leren i guess"
         },
         "General": {
             "i": "ik",
@@ -65,7 +73,9 @@
             "submit": "Verzenden",
             "my": "Mijn",
             "frameworks": "Hulpmiddelen & raamwerken",
-            "professionalism": "Professionaliteit"
+            "professionalism": "Professionaliteit",
+            "application": "Applicatie beheer",
+            "projects": "Projecten"
         },
         "Language": {
             "english": "Engels",
