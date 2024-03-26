@@ -356,4 +356,28 @@ span[data-txt] {
             }
         }
     }
+
+    .bottombtn {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+
+}
+
+.projects {
+    .fixed-grid .grid {
+        height: 700px;
+
+        .cell {
+            background-color: $primary-color;
+            padding: 10px;
+            border-radius: calc($small-radius / 2);
+            border: 2px solid $whites;
+        }
+    }
 }
