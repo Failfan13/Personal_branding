@@ -11,8 +11,8 @@ ic {
 }
 
 .newheading {
-    margin-top: 5em;
-    padding: 0 2em;
+    margin-top: $section-margin;
+    padding: 0 $content-margin;
 }
 
 .is-primary {
@@ -20,9 +20,12 @@ ic {
     color: $whites;
     border-radius: $small-radius;
     height: 50px;
+    border: solid 4px $secondary-color !important;
+    transition: border 0.2s ease-in-out;
 
     &:hover {
         background-color: $primary-color-dark !important;
+        border: solid 4px $primary-color-dark !important;
     }
 }
 
@@ -240,8 +243,8 @@ span[data-txt] {
 
 .section {
     .columns {
-        margin-top: 2em;
-        padding: 0 2em;
+        margin-top: $content-margin;
+        padding: 0 $content-margin;
     }
 
     .button {
@@ -372,6 +375,8 @@ span[data-txt] {
 .projects {
     .fixed-grid .grid {
         height: 700px;
+        margin-top: $content-margin;
+        padding: 0 $content-margin;
 
         .cell {
             background-color: $primary-color;
@@ -380,4 +385,42 @@ span[data-txt] {
             border: 2px solid $whites;
         }
     }
+}
+
+.contact {
+    .info {
+        .info-context {
+            padding: 25px;
+        }
+    }
+
+    .form {
+        position: relative;
+        box-sizing: border-box;
+        padding: 60px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        textarea {
+            min-height: 200px;
+            max-height: 200px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            clear: both;
+            background-image: linear-gradient(45deg, $primary-color, $primary-color-dark);
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            filter: blur(10px);
+            border-radius: 20px;
+        }
+    }
+
 }

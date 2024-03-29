@@ -6,7 +6,7 @@
             "helloThere": "Hello there!",
             "profession": "Full-stack developer / student",
             "viewProjects": "View my projects",
-            "ami": "Who am",
+            "ami": "Who am ",
             "agree": "I agree to the ",
             "terms": "terms and conditions",
             "me": "My name is Erik Maan, I am 21 years old and live in the Goere-overflakke area.<br> I am a student at Rotterdam University of Applied Sciences and follow a 4-year Software Development course.<br> In the future I would like to see myself in a full-stack developer position, during a previous training I already gained experience with the font end of website building.",
@@ -17,7 +17,9 @@
             "scrum": "In the projects shown below I have used the scrum method several times. For most projects I have been the scrum master and I have put my project team to work and kept all documentation files in order to create an managable overview.",
             "office": "",
             "adobe": "",
-            "gainKnowledge": "Uhhhh just learning i guess"
+            "gainKnowledge": "Uhhhh just learning i guess",
+            "contactMe": "Let's get in touch!",
+            "contactWhy": "Feel free to contact me for questions or comments about my website or projects or just to chat."
         },
         "General": {
             "i": "I",
@@ -32,7 +34,9 @@
             "frameworks": "Tools & frameworks",
             "professionalism": "Professionalism",
             "application": "Application management",
-            "projects": "Projects"
+            "projects": "Projects",
+            "me": "me",
+            "contact": "Contact"
         },
         "Language": {
             "english": "English",
@@ -57,7 +61,7 @@
             "helloThere": "Hallo daar!",
             "profession": "Full-stack ontwikkelaar / student",
             "viewProjects": "Bekijk mijn projecten",
-            "ami": "Wie ben",
+            "ami": "Wie ben ",
             "agree": "Ik ga akkoord met de ",
             "terms": "algemene voorwaarden",
             "me": "Mijn naam is Erik Maan, ik ben 21 jaar oud en woon in de omgeving Goere-overflakke.<br> Ik ben een student te Hoge school Rotterdam en volg een 4 jarige opleiding Software Development.<br> In de toekomst zie ik mezelf graag in een full-stack ontwikkelaar positie, op een vorige opleiding heb ik al ervaring opgedaan met de font-end van websites bouwen.",
@@ -68,7 +72,9 @@
             "scrum": "In de projecten die hieronder worden weergeven heb ik meerdere keren gebruik gemaakt van de scrum methode. Bij de meeste projecten ben ik de scrum master geweest en heb ik mijn project team tot werken gezet en heb alle documentatie bestanden in orde gehouden om een duideijk overzicht te maken.",
             "office": "Om documentatie bestanden te maken voor de projecten waar ik aan heb deelgenomen heb ik gebruik gemaakt van Microsoft Office.",
             "adobe": "Voor mijn informatica opleiding heb ik gebruik gemaakt van Adobe programma's zoals Photoshop, Illustrator en InDesign om grafische ontwerpen te maken.",
-            "gainKnowledge": "Uhhhh gwn leren i guess"
+            "gainKnowledge": "Uhhhh gwn leren i guess",
+            "contactMe": "Laten we in contact komen!",
+            "contactWhy": "Je kan mij gerust contacten voor vragen of opmerkingen over mijn website of projecten of gewoon om te kletsen."
         },
         "General": {
             "i": "ik",
@@ -83,7 +89,9 @@
             "frameworks": "Hulpmiddelen & raamwerken",
             "professionalism": "Professionaliteit",
             "application": "Applicatie beheer",
-            "projects": "Projecten"
+            "projects": "Projecten",
+            "me": "mij",
+            "contact": "Contacteer "
         },
         "Language": {
             "english": "Engels",
