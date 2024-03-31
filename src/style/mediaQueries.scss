@@ -1,0 +1,103 @@
+@import "./variables.scss";
+
+
+@media (min-width: $tablet-breakpoint) {
+
+    .section {
+        .columns {
+            margin-top: $content-margin;
+            padding: 0 $content-margin;
+        }
+
+        .button {
+            margin-top: 1em;
+            gap: 5px;
+        }
+    }
+
+    .navbar {
+        margin: 20px 25px;
+        border-radius: $big-radius;
+    }
+
+    .header {
+        .header-head {
+            margin-top: 18vh;
+        }
+
+        .header-txt {
+            .header-buttons {
+                flex-direction: row;
+
+                .button {
+                    width: 100%;
+
+                    span {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop-breakpoint) {
+
+    .navbar {
+        padding: 0px 5em;
+
+        .navbar-menu {
+            position: relative;
+            border-radius: none;
+
+            .button {
+                margin: 0 15px;
+            }
+        }
+
+        .navbar-start {
+            display: flex;
+        }
+
+    }
+
+    .header {
+        .header-head {
+            margin-top: 28vh;
+        }
+
+        .header-intro {
+            padding-left: 105px;
+            max-width: calc(50% - 105px);
+        }
+
+        .header-image {
+            display: block;
+        }
+    }
+
+    .aboutme {
+        .form {
+            margin-left: 50px;
+        }
+
+        .columns {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .extra {
+            ic {
+                margin-right: 3em;
+            }
+        }
+    }
+
+    .knowledge {
+        .extra {
+            .is-parent {
+                flex-basis: 25%;
+            }
+        }
+    }
+}
