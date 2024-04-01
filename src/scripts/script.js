@@ -69,3 +69,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+var activateMessage = () => {
+    document.getElementById('message').classList.add('is-active');
+    setTimeout(() => {
+        document.getElementById('message').classList.remove('is-active');
+    }, 3000);
+}
+
+document.querySelectorAll('.submit').forEach(btn => {
+    btn.addEventListener('click', () => {
+        activateMessage();
+    });
+});
