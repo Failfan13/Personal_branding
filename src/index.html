@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>&#x1F44B; Erik Maan - Portfolio
+  </title>
+
+  <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-functions-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-messaging-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-storage-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-remote-config-compat.js"></script>
+  <!-- <script defer src="../src/init-firebase.js"></script> console error-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mediaQueries.css">
+</head>
+
+<body class="has-navbar-fixed-top">
+  <header id="Home">
+    <section class="header-inner">
+      <nav id="navbar" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <!-- <div class="navbar-blur is-fixed-top"></div> -->
+        <div class="navbar-brand">
+          <a class="navbar-item" href="">
+            <img src="https://1000logos.net/wp-content/uploads/2016/11/google-logo.jpg"></a>
+          </a>
+        </div>
+        <div id="navbar-elems" class="navbar-menu">
+          <hr class="navbar-divider">
+          <div class="navbar-start">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                <img id="dropdown-img" src="">
+              </a>
+
+              <div class="navbar-dropdown">
+                <a href="" class="dropdown-item language-item NL"><img src="./assets/images/nl.png" alt="Dutch flag"
+                    class="flag"><span data-txt="Language.dutch"></span:data-txt></a>
+                <a href="" class="dropdown-item language-item EN"><img src="./assets/images/en.png" alt="English flag"
+                    class="flag"><span data-txt="Language.english"></span></a>
+              </div>
+            </div>
+            <hr class="navbar-divider">
+            <div class="navbar-item non-menu">Personal branding</div>
+          </div>
+
+          <div class="navbar-end">
+            <a href="#AboutMe" class="navbar-item"><span data-txt="Menu.aboutMe"></span></a>
+            <hr class="navbar-divider">
+            <a href="#Knowledge" class="navbar-item"><span data-txt="Menu.knowledge"></span></a>
+            <hr class="navbar-divider">
+            <a href="#Projects" class="navbar-item"><span data-txt="Menu.projects"></span></a>
+            <a href="#Contact" class="button is-primary navbar-item">
+              <ic>&#x1F919;&#x1F3FB;</ic><span data-txt="Menu.contact"></span>
+            </a>
+          </div>
+        </div>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-elems">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </nav>
+
+      <section class="header columns">
+        <div class="header-intro column">
+          <heading class="header-head">
+            <span data-txt="Sentence.ohHey"></span><br>
+            <span data-txt="Sentence.helloThere"></span>
+          </heading>
+          <article class="header-txt">
+            <div>
+              <span data-txt="Sentence.profession" class="profession is-size-3"></span>
+              <ic>&#x1F393;</ic>
+            </div>
+            <hr class="divider-hor">
+            <span data-txt="Sentence.attention" class="is-size-4"></span>
+            <div class="header-buttons">
+              <a href="#Contact" class="button is-primary with-border"><span data-txt="General.contact General.me"
+                  class="is-size-4"></span></a>
+              <a href="#Projects" class="button is-primary"><span data-txt="Sentence.viewProjects"
+                  class="is-size-4"></span></a>
+            </div>
+
+          </article>
+        </div>
+        <article class="header-image column">
+          <div class="container">
+            <img src="./assets/images/monke (1).png">
+          </div>
+        </article>
+      </section>
+    </section>
+  </header>
+
+  <section id="AboutMe" class="section aboutme">
+    <span data-txt="Sentence.ami" class="is-size-3"></span>
+    <span data-txt="General.i" class="is-size-3 name"></span>
+    <div class="columns newheading">
+      <div class="column form">
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label"><span data-txt="General.name"></span></label>
+          </div>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input" value="Erik Maan">
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label"><span data-txt="General.age"></span></label>
+          </div>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input" value="21">
+          </div>
+        </div>
+
+        <div class="field has-addons is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label"><span data-txt="General.email"></span></label>
+          </div>
+          <p class="control">
+            <input class="input" type="text" placeholder="Your email" value="failfan13gta5">
+          </p>
+          <p class="control">
+            <a class="button is-static">
+              @gmail.com
+            </a>
+          </p>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label"><span data-txt="General.skills"></span></label>
+          </div>
+          <div class="control">
+            <div class="select">
+              <select>
+                <option selected>Full-stack developer</option>
+                <option>Front-end developer</option>
+                <option>Back-end developer</option>
+                <option disabled>Graphic designer</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label"><span data-txt="General.education"></span></label>
+          </div>
+          <div class="control radio-container">
+            <label class="radio">
+              <input type="radio" name="rsvp">
+              <span data-txt="Job.software"></span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="rsvp">
+              <span data-txt="Job.graphic"></span>
+            </label>
+            <label class="radio" disabled>
+              <input type="radio" name="rsvp" disabled>
+              <span data-txt="Job.mechanic"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label"><span data-txt="General.experiences"></span></label>
+          </div>
+          <div class="control">
+            <textarea class="textarea">
+2021 - Lyfter Steenbergen
+2018 - Garage Bleukens Middelharnis
+            </textarea>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label"></label>
+          </div>
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox" checked>
+              <span data-txt="Sentence.agree"></span><a href=""><span data-txt="Sentence.terms"></span></a>
+            </label>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label"></label>
+          </div>
+          <div class="field-body">
+            <a href="" class="button is-primary">
+              <span data-txt="General.submit"></span>
+              <ic>&#x1F4E9;</ic>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column extra">
+        <div class="field">
+          <div class="control txtarea">
+            <div>
+              <ic>&#x1F4E9;</ic>
+            </div>
+            <span data-txt="Sentence.me"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Knowledge" class="section knowledge">
+    <span data-txt="General.my" class="is-size-3"></span>
+    <ic class="title-icon">&#x1F9E0;</ic>
+    <div class="columns">
+      <div class="column">
+        <span data-txt="Sentence.knowledge" class="is-size-4 subtitle"></span><br>
+        <div class="column extra">
+          <div class="field">
+            <div class="control txtarea">
+              <span data-txt="Sentence.gainKnowledge"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <span data-txt="General.frameworks" class="is-size-4 subtitle"></span>
+        <div class="tile is-ancestor extra">
+          <div class="tile is-parent">
+            <a href="" class="tile is-child box">
+              <p class="title is-size-6">Github</p>
+              <img src="./assets/images/github_black_logo_icon_147128.png">
+            </a>
+          </div>
+          <div class="tile is-parent">
+            <a href="" class="tile is-child box">
+              <p class="title is-size-6">NodeJs</p>
+              <img src="./assets/images/2560px-Node.js_logo.svg.png">
+            </a>
+          </div>
+          <div class="tile is-parent">
+            <a href="" class="tile is-child box">
+              <p class="title is-size-6">Firebase</p>
+              <img src="./assets/images/firebase_logo_icon_171157.png">
+            </a>
+          </div>
+          <div class="tile is-parent">
+            <a href="" class="tile is-child box">
+              <p class="title is-size-6">React</p>
+              <img src="./assets/images/React_Logo_SVG.svg.png">
+            </a>
+          </div>
+        </div>
+        <div class="tile is-ancestor extra">
+          <div class="tile is-parent">
+            <a href="" class="tile is-child box">
+              <p class="title is-size-6">Vue</p>
+              <img src="./assets/images/Vue.js_Logo_2.svg.png">
+            </a>
+          </div>
+          <div class="tile is-parent">
+            <a href="" class="tile is-child box">
+              <p class="title is-size-6">Bulma</p>
+              <img src="./assets/images/bulma-logo-45B5145BF4-seeklogo.com.png">
+            </a>
+          </div>
+          <div class="tile is-parent">
+            <a href="" class="tile is-child box">
+              <p class="title is-size-6">Laravel</p>
+              <img src="./assets/images/1969px-Laravel.svg.png">
+            </a>
+          </div>
+          <div class="tile is-parent">
+            <a href="" class="tile is-child box">
+              <p class="title is-size-6">Leeg wantja</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column windows newheading">
+      <span data-txt="General.professionalism" class="is-size-4 subtitle"></span>
+      <div class="tile is-ancestor extra">
+        <div class="tile is-parent">
+          <a href="" class="tile is-child box">
+            <img class="window" src="./assets/images/scrum-logo-B057CBD9B8-seeklogo.com.png">
+            <p class="title is-size-6">Scrum</p>
+            <span data-txt="Sentence.scrum"></span>
+            <div class="bottombtn">
+              <div class="button is-primary"><span data-txt="Sentence.viewScrum"></span></div>
+            </div>
+          </a>
+        </div>
+        <div class="tile is-parent">
+          <a href="" class="tile is-child box">
+            <img class="window" src="./assets/images/Microsoft-Office-logo.png">
+            <p class="title is-size-6">Microsoft office</p>
+            <span data-txt="Sentence.office"></span>
+            <div class="bottombtn">
+              <div class="button is-primary"><span data-txt="Sentence.viewOffice"></span></div>
+            </div>
+          </a>
+        </div>
+        <div class="tile is-parent">
+          <a href="" class="tile is-child box">
+            <ic class="window">&#x1FA9F;</ic>
+            <p class="title is-size-6">Adobe Creative Cloud</p>
+            <span data-txt="Sentence.adobe"></span>
+            <div class="bottombtn">
+              <div class="button is-primary"><span data-txt="Sentence.viewAdobe"></span></div>
+            </div>
+          </a>
+        </div>
+        <div class="tile is-parent">
+          <a href="" class="tile is-child box">
+            <img class="window" src="./assets/images/github_black_logo_icon_147128.png">
+            <p class="title is-size-6">Github</p>
+            <span data-txt="hoi"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Projects" class="section projects">
+    <ic class="is-size-3">&#x1F4F0;</ic>
+    <span data-txt="General.projects" class="is-size-3 name"></span>
+    <div class="fixed-grid has-4-cols">
+      <div class="grid">
+        <div class="cell is-row-span-1">1</div>
+        <div class="cell is-col-span-2 is-row-span-2">2</div>
+        <div class="cell is-row-span-1">3</div>
+        <div class="cell is-row-span-2">4</div>
+        <div class="cell">5</div>
+        <div class="cell is-col-span-3">6</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Contact" class="section contact">
+    <span data-txt="General.contact" class="is-size-3"></span>
+    <span data-txt="General.me" class="is-size-3 name"></span>
+    <div class="columns">
+      <div class="column info">
+        <span class="is-size-4 name" data-txt="Sentence.contactMe"></span><br>
+        <span class="is-size-6" data-txt="Sentence.contactWhy"></span>
+        <div class="info-context">
+          <ic>&#x1F4DE;</ic>
+          <span>+31(0) 642 689 889</span>
+        </div>
+        <div class="info-context">
+          <ic>&#x1F4E7;</ic>
+          <span>failfan13gta5@gmail.com</span>
+        </div>
+        <div class="info-context">
+          <img src="./assets/images/LinkedIn_icon.svg.png" alt="Linkedin logo">
+          <a href="https://www.linkedin.com/in/erik-maan-030856179/">Linkedin.com/erik-maan-030856179</a>
+        </div>
+      </div>
+      <div class="column form">
+        <div class="field is-horizontal">
+          <div class="control">
+            <input class="input" type="text" placeholder="&#x1F471; Name">
+          </div>
+        </div>
+        <div class="field is-horizontal">
+          <div class="control">
+            <input class="input" type="text" placeholder="&#x1F4E7; E-mail">
+          </div>
+        </div>
+        <div class="field">
+          <textarea class="textarea" placeholder="&#x1F5B9; Your message goes here : )"></textarea>
+        </div>
+        <a href="" class="is-primary button">
+          <span data-txt="General.submit"></span>
+          <ic>&#x1F4E9;</ic>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav id="navbar" class="navbar with-border" role="navigation" aria-label="main navigation">
+      <!-- <div class="navbar-blur is-fixed-top"></div> -->
+      <div class="navbar-brand">
+        <a class="navbar-item" href="">
+          <img src="https://1000logos.net/wp-content/uploads/2016/11/google-logo.jpg"></a>
+        </a>
+      </div>
+      <div id="navbar-elems" class="navbar-menu">
+        <a href="#Home" class="navbar-item is-size-4">
+          <ic>&#x2191;</ic>
+        </a>
+        <hr class="navbar-divider">
+        <a href="#AboutMe" class="navbar-item"><span data-txt="Menu.aboutMe"></span></a>
+        <hr class="navbar-divider">
+        <a href="#Knowledge" class="navbar-item"><span data-txt="Menu.knowledge"></span></a>
+        <hr class="navbar-divider">
+        <a href="#Projects" class="navbar-item"><span data-txt="Menu.projects"></span></a>
+      </div>
+      <div class="navbar-contact">
+        <div class="info-context">
+          <ic>&#x1F4DE;</ic>
+          <span>+31(0) 642 689 889</span>
+        </div>
+        <div class="info-context">
+          <ic>&#x1F4E7;</ic>
+          <span>failfan13gta5@gmail.com</span>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </footer>
+</body>
+
+<script src="./scripts/language.js"></script>
+<script src="./scripts/script.js"></script>
+
+</html>

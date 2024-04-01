@@ -1,0 +1,140 @@
+@import "./variables.scss";
+
+
+@media (min-width: $tablet-breakpoint) {
+
+
+    .section {
+        .columns {
+            margin-top: $content-margin;
+            padding: 0 $content-margin;
+        }
+
+        .button {
+            margin-top: 1em;
+            gap: 5px;
+        }
+    }
+
+    .navbar {
+        margin: 20px 25px;
+        border-radius: $big-radius;
+    }
+
+    .header {
+        .header-head {
+            margin-top: 18vh;
+        }
+
+        .header-txt {
+            .header-buttons {
+                flex-direction: row;
+
+                .button {
+                    width: 100%;
+
+                    span {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .windows {
+        padding: 0 2em !important;
+
+        .extra {
+            display: flex;
+            flex-direction: row !important;
+        }
+    }
+
+    .projects {
+        .grid {
+            padding: 0 $content-margin;
+
+        }
+    }
+}
+
+@media (min-width: $desktop-breakpoint) {
+
+    .form {
+        margin-left: 50px;
+    }
+
+    .navbar {
+        padding: 0px 5em;
+
+        .navbar-menu {
+            position: relative;
+            border-radius: none;
+
+            .button {
+                margin: 0 15px;
+            }
+        }
+
+        .navbar-start {
+            display: flex;
+        }
+
+    }
+
+    .header {
+        .header-head {
+            margin-top: 28vh;
+        }
+
+        .header-intro {
+            padding-left: 105px;
+            max-width: calc(50% - 105px);
+        }
+
+        .header-image {
+            display: block;
+        }
+    }
+
+    .aboutme {
+        .form {
+            margin-left: 50px;
+        }
+
+        .columns {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .extra {
+            ic {
+                margin-right: 3em;
+            }
+        }
+    }
+
+    .knowledge {
+        .extra {
+            .is-parent {
+                flex-basis: 25%;
+            }
+        }
+    }
+
+    .projects {
+        .fixed-grid .grid {
+            display: grid;
+            gap: 0.75em;
+
+            grid-template-columns: auto auto auto auto;
+
+            .cell {
+                &:nth-child(5) {
+                    grid-row: auto !important;
+                    grid-column: auto !important;
+                }
+            }
+        }
+    }
+}
