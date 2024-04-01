@@ -56,6 +56,24 @@
 
         }
     }
+
+    footer {
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            padding: 0 5em;
+
+            img {
+                display: inline;
+            }
+
+            .navbar-contact {
+                display: flex;
+            }
+        }
+    }
 }
 
 @media (min-width: $desktop-breakpoint) {
@@ -134,6 +152,17 @@
                     grid-row: auto !important;
                     grid-column: auto !important;
                 }
+            }
+        }
+    }
+
+    footer {
+        .navbar {
+            padding: 0 5em;
+            height: 85px;
+
+            img {
+                display: inline;
             }
         }
     }
