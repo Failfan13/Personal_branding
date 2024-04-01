@@ -3,6 +3,7 @@
 
 @media (min-width: $tablet-breakpoint) {
 
+
     .section {
         .columns {
             margin-top: $content-margin;
@@ -39,9 +40,29 @@
             }
         }
     }
+
+    .windows {
+        padding: 0 2em !important;
+
+        .extra {
+            display: flex;
+            flex-direction: row !important;
+        }
+    }
+
+    .projects {
+        .grid {
+            padding: 0 $content-margin;
+
+        }
+    }
 }
 
 @media (min-width: $desktop-breakpoint) {
+
+    .form {
+        margin-left: 50px;
+    }
 
     .navbar {
         padding: 0px 5em;
@@ -97,6 +118,22 @@
         .extra {
             .is-parent {
                 flex-basis: 25%;
+            }
+        }
+    }
+
+    .projects {
+        .fixed-grid .grid {
+            display: grid;
+            gap: 0.75em;
+
+            grid-template-columns: auto auto auto auto;
+
+            .cell {
+                &:nth-child(5) {
+                    grid-row: auto !important;
+                    grid-column: auto !important;
+                }
             }
         }
     }

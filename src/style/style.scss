@@ -37,7 +37,7 @@ ic {
 
 .section {
     .columns {
-        margin-top: $content-margin;
+        margin-top: 0;
         padding: 0 0;
     }
 
@@ -48,7 +48,7 @@ ic {
 }
 
 .form {
-    margin-left: 50px;
+    margin-left: 0;
 }
 
 .txtarea {
@@ -346,6 +346,13 @@ span[data-txt] {
     }
 
     .windows {
+        padding: 0;
+
+        .extra {
+            display: flex;
+            flex-direction: column;
+        }
+
         .tile.box {
             max-height: 600px;
             align-items: flex-start;
@@ -428,13 +435,20 @@ span[data-txt] {
     .fixed-grid .grid {
         height: 700px;
         margin-top: $content-margin;
-        padding: 0 $content-margin;
+        gap: 0;
+        grid-template-columns: 50% 50%;
+        // padding: 0 $content-margin;
 
         .cell {
             background-color: $primary-color;
             padding: 10px;
             border-radius: calc($small-radius / 2);
             border: 2px solid $whites;
+
+            &:nth-child(5) {
+                grid-row: 3/5;
+                grid-column: 2;
+            }
         }
     }
 }
@@ -442,7 +456,21 @@ span[data-txt] {
 .contact {
     .info {
         .info-context {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
             padding: 25px;
+
+            img {
+                width: 20px;
+                height: auto;
+            }
+
+            a {
+                text-decoration: underline;
+            }
         }
     }
 
@@ -517,4 +545,4 @@ footer {
     }
 }
 
-@import "./mediaQueries.scss";
+// @import "./mediaQueries.scss";
