@@ -54,9 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
         document.getElementById('navbar').classList.add('is-solid');
+        document.getElementById('fixed-image').classList.add('is-active');
     }
     else {
         document.getElementById('navbar').classList.remove('is-solid');
+        document.getElementById('fixed-image').classList.remove('is-active');
     }
 })
 

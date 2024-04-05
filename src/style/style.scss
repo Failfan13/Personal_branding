@@ -248,6 +248,18 @@ span[data-txt] {
             width: 50%;
 
         }
+
+        .fixed {
+            width: 100%;
+            right: -6vw;
+            bottom: -170px;
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .fixed.is-active {
+            bottom: -1170px;
+        }
     }
 }
 
@@ -451,9 +463,12 @@ span[data-txt] {
         .cell {
             position: relative;
             background-color: $primary-color;
-            padding: 10px;
             border-radius: calc($small-radius / 2);
             border: 2px solid $whites;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             &:nth-child(5) {
                 grid-row: 3/5;
@@ -472,6 +487,24 @@ span[data-txt] {
                 border-radius: 5px;
 
                 animation: showProject 0.2s ease-in-out;
+            }
+
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(6) {
+                background-color: $secondary-color !important;
+            }
+
+            &:nth-child(4),
+            &:nth-child(5) {
+                background-color: $whites !important;
+            }
+
+            img {
+                width: 100%;
+                position: absolute;
             }
         }
     }
