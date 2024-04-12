@@ -251,6 +251,7 @@ span[data-txt] {
 
         .fixed {
             width: 100%;
+            max-width: 1400px;
             right: -6vw;
             bottom: -170px;
             opacity: 1;
@@ -258,7 +259,7 @@ span[data-txt] {
         }
 
         .fixed.is-active {
-            bottom: -1170px;
+            bottom: -5em;
         }
     }
 }
